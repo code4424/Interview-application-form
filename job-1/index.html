@@ -1,273 +1,216 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Template</title>
+  <title>Template</title>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
-    <!-- External Css -->
-    <link rel="stylesheet" href="assets/css/line-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+  <!-- External Css -->
+  <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
 
-    <!-- Custom Css --> 
-    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/job-1.css">
+  <!-- Custom Css --> 
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/job-1.css">
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
-    <!-- Favicon -->
-    <link rel="icon" href="assets/images/favicon.png">
-    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/icon-114x114.png">
-
-
-  </head>
-  <body>
-
-    <div class="ugf-wrapper">
-      <div class="logo">
-        <a href="../index.html">
-          <img src="https://kiaanagrow.com/wp-content/uploads/2024/04/Kiaan-Logo-1-1.png" class="img-fluid logo-white" alt="logo">
-          <img src="assets/images/logo-dark.png" class="img-fluid logo-black" alt="logo">
-        </a>
+  <!-- Favicon -->
+  <link rel="icon" href="assets/images/favicon.png">
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/images/icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/images/icon-114x114.png">
+</head>
+<body>
+  <div class="ugf-wrapper">
+    <div class="logo">
+      <a href="../main.html">
+        <img src="https://kiaanagrow.com/wp-content/uploads/2024/04/Kiaan-Logo-1-1.png" class="img-fluid logo-white" alt="logo" >
+        <img src="https://kiaanagrow.com/wp-content/uploads/2024/04/Kiaan-Logo-1-1.png" class="img-fluid logo-black" alt="logo" style="background-color: black;">
+      </a>
+    </div>
+    <div class="ugf-content-block">
+      <div class="content-block">
+        <h1 style="position: relative;top:200px;">Join with us !</h1>
       </div>
-      <div class="ugf-content-block">
-        <div class="content-block">
-          <h1>Join with us !</h1>
-          
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-5 offset-lg-7 p-sm-0">
-            <div class="ufg-job-application-wrapper pt150">
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"><span class="step-text"><span class="current-step"></span> of <span class="total-step"></span> completed</span></div>
-              </div>
-              <div class="form-steps active">
-                <h3>Personal information</h3>
-                <form action="#" class="job-application-form" id="commentForm1">
-                  <div class="form-group">
-                    <input type="text" name="name" class="form-control" id="input-text" required>
-                    <label for="input-text">Name</label>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 offset-lg-7 p-sm-0">
+          <div class="ufg-job-application-wrapper pt150">
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"><span class="step-text"><span class="current-step"></span> of <span class="total-step"></span> completed</span></div>
+            </div>
+            <div class="form-steps active">
+              <h3>Personal information</h3>
+              <form action="submit_application.php" method="POST" enctype="multipart/form-data" class="job-application-form" id="commentForm1">
+                <div class="form-group">
+                  <input type="text" name="name" class="form-control" id="input-text" required>
+                  <label for="input-text">Name</label>
+                </div>
+                <div class="form-group">
+                  <input type="email" name="email" class="form-control" id="input-mail" required>
+                  <label for="input-mail">Email Address</label>
+                </div>
+                <div class="form-group">
+                  <input type="text" name="phone" class="form-control" id="input-pass" required>
+                  <label for="input-pass">Phone</label>
+                </div>
+                <div class="form-group check-gender">
+                  <span class="lebel-text">Select Gender</span>
+                  <div class="custom-radio">
+                    <input type="radio" name="gender" value="male" class="custom-control-input" id="male" required>
+                    <label class="custom-control-label" for="male">Male</label>
                   </div>
-                  <div class="form-group">
-                    <input type="email" name="email" class="form-control" id="input-mail" required>
-                    <label for="input-mail">Email Addresss</label>
+                  <div class="custom-radio">
+                    <input type="radio" name="gender" value="female" class="custom-control-input" id="female" required>
+                    <label class="custom-control-label" for="female">Female</label>
                   </div>
-                  <div class="form-group">
-                    <input type="text" name="phone" class="form-control" id="input-pass" required>
-                    <label for="input-pass">Phone</label>
+                </div>
+                <button class="btn step-btn" type="button" onclick="validateForm('#commentForm1', 1)">Next</button>
+              </form>
+            </div>
+            <div class="form-steps">
+              <a href="#" class="prev"><i class="las la-arrow-left"></i>Previous Step</a>
+              <h3 class="border-bottom">Select Job Position</h3>
+              <form action="submit_application.php" method="POST" enctype="multipart/form-data" class="job-application-form" id="commentForm2">
+                <div class="form-group radio-group">
+                  <div class="custom-radio">
+                    <input type="radio" name="position" value="Frontend developer" class="custom-control-input" id="radio1" required>
+                    <label class="custom-control-label" for="radio1">Frontend developer</label>
                   </div>
-                  <div class="form-group check-gender">
-                    <span class="lebel-text">Select Gender</span>
-                    <div class="custom-radio">
-                      <input type="radio" name="gender" class="custom-control-input" id="male" required>
-                      <label class="custom-control-label" for="male">Male</label>
-                    </div>
-                    <div class="custom-radio">
-                      <input type="radio" name="gender" class="custom-control-input" id="female" required>
-                      <label class="custom-control-label" for="female">Female</label>
-                    </div>
+                </div>
+                <div class="form-group radio-group">
+                  <div class="custom-radio">
+                    <input type="radio" name="position" value="Backend developer" class="custom-control-input" id="radio2" required>
+                    <label class="custom-control-label" for="radio2">Backend developer</label>
                   </div>
-                  <button class="btn step-btn">Next</button>
-                </form>
-              </div>
-              <div class="form-steps">
-                <a href="index.html" class="prev"><i class="las la-arrow-left"></i>Previous Step</a>
-                <h3 class="border-bottom">Select Job Position</h3>
-                <form action="#" class="job-application-form" id="commentForm2">
-                  <div class="form-group radio-group">
-                    <div class="custom-radio">
-                      <input type="radio" name="salary-range" class="custom-control-input" id="radio1" required>
-                      <label class="custom-control-label" for="radio1">Frontend developer</label>
-                    </div>
+                </div>
+                <div class="form-group radio-group">
+                  <div class="custom-radio">
+                    <input type="radio" name="position" value="UI/UX Designer" class="custom-control-input" id="radio3" required>
+                    <label class="custom-control-label" for="radio3">UI/UX Designer</label>
                   </div>
-                  <div class="form-group radio-group">
-                    <div class="custom-radio">
-                      <input type="radio" name="salary-range" class="custom-control-input" id="radio2" required>
-                      <label class="custom-control-label" for="radio2">WordPress developer</label>
-                    </div>
+                </div>
+                <div class="form-group radio-group">
+                  <div class="custom-radio">
+                    <input type="radio" name="position" value="Digital marketing" class="custom-control-input" id="radio4" required>
+                    <label class="custom-control-label" for="radio4">Digital marketing</label>
                   </div>
-                  <div class="form-group radio-group">
-                    <div class="custom-radio">
-                      <input type="radio" name="salary-range" class="custom-control-input" id="radio3" required>
-                      <label class="custom-control-label" for="radio3">UI/UX Designer</label>
-                    </div>
+                </div>
+                <div class="form-group radio-group">
+                  <div class="custom-radio">
+                    <input type="radio" name="position" value="Agronomist" class="custom-control-input" id="radio5" required>
+                    <label class="custom-control-label" for="radio5">Agronomist (BSE AG BACKGROUND)</label>
                   </div>
-                  <div class="form-group radio-group">
-                    <div class="custom-radio">
-                      <input type="radio" name="salary-range" class="custom-control-input" id="radio4" required>
-                      <label class="custom-control-label" for="radio4">Support Engineer</label>
-                    </div>
+                </div>
+                <button class="btn step-btn" type="button" onclick="validateForm('#commentForm2', 2)">Next</button>
+              </form>
+            </div>
+            <div class="form-steps">
+              <a href="#" class="prev"><i class="las la-arrow-left"></i>Previous Step</a>
+              <h3>Work Experience</h3>
+              <form action="submit_application.php" method="POST" enctype="multipart/form-data" class="job-application-form" id="commentForm3">
+                <div class="form-group country-select">
+                  <div class="select-input choose-country">
+                    <span></span>
+                    <select id="inputCountry" class="form-control" name="workExperience" required>
+                      <option value="">Work Experience</option>
+                      <option value="Below 1 Year">Below 1 Year</option>
+                      <option value="1 - 2 Years">1 - 2 Years</option>
+                      <option value="2 - 5 Years">2 - 5 Years</option>
+                      <option value="Above 5 Years">Above 5 Years</option>
+                    </select>
                   </div>
-                  <div class="form-group radio-group">
-                    <div class="custom-radio">
-                      <input type="radio" name="salary-range" class="custom-control-input" id="radio5" required>
-                      <label class="custom-control-label" for="radio5">Graphic Designer</label>
-                    </div>
+                </div>
+                <button class="btn step-btn" type="button" onclick="validateForm('#commentForm3', 3)">Next</button>
+              </form>
+            </div>
+            <div class="form-steps">
+              <a href="#" class="prev"><i class="las la-arrow-left"></i>Previous Step</a>
+              <h3 class="border-bottom">Availability & Salary Range</h3>
+              <form action="submit_application.php" method="POST" enctype="multipart/form-data" class="job-application-form" id="commentForm4">
+                <h4 class="block-title">Work Availability</h4>
+                <div class="form-group radio-group">
+                  <div class="custom-radio">
+                    <input type="radio" name="job-type" value="Full time" class="custom-control-input" id="radio10" required>
+                    <label class="custom-control-label" for="radio10">Full time</label>
                   </div>
-                  <button class="btn step-btn">Next</button>
-                </form>
-              </div>
-              <div class="form-steps">
-                <a href="index.html" class="prev"><i class="las la-arrow-left"></i>Previous Step</a>
-                <h3>Work Experiance  <span>(WordPress Developer)</span></h3>
-                <form action="#" class="job-application-form" id="commentForm3">
-                  <div class="form-group country-select">
-                    <div class="select-input choose-country">
-                      <span></span>
-                        <select id="inputCountry" class="form-control" name="workExperiance " required>
-                          <option value="">Work Experiance</option>
-                          <option value="">Below 1 Year</option>
-                          <option value="">1 - 2 Year</option>
-                          <option value="">2 - 5 Year</option>
-                          <option value="">Avobe 5 year</option>
-                        </select>
-                    </div>
+                </div>
+                <div class="form-group radio-group">
+                  <div class="custom-radio">
+                    <input type="radio" name="job-type" value="Part Time" class="custom-control-input" id="radio20" required>
+                    <label class="custom-control-label" for="radio20">Part Time</label>
                   </div>
-                  <h4 class="block-title">Experiance Fields</h4>
-                  <div class="form-group check-group">
-                    <div class="custom-checkbox">
-                      <input type="checkbox" class="custom-control-input" id="customControlValidation1">
-                      <label class="custom-control-label" for="customControlValidation1">WP theme development</label>
-                    </div>
+                </div>
+                <div class="form-group radio-group">
+                  <div class="custom-radio">
+                    <input type="radio" name="job-type" value="Freelance / Contract" class="custom-control-input" id="radio30" required>
+                    <label class="custom-control-label" for="radio30">Freelance / Contract</label>
                   </div>
-                  <div class="form-group check-group">
-                    <div class="custom-checkbox">
-                      <input type="checkbox" class="custom-control-input" id="customControlValidation2">
-                      <label class="custom-control-label" for="customControlValidation2">WP plugin development</label>
-                    </div>
+                </div>
+                <button class="btn step-btn" type="button" onclick="validateForm('#commentForm4', 4)">Next</button>
+              </form>
+            </div>
+            <div class="form-steps">
+              <a href="#" class="prev"><i class="las la-arrow-left"></i>Previous Step</a>
+              <h3>Cover Letter & Resume</h3>
+              <form action="submit_application.php" method="POST" enctype="multipart/form-data" class="job-application-form" id="commentForm5">
+                <div class="form-group">
+                  <textarea class="form-control" name="cover-letter" id="inputText" required></textarea>
+                  <label for="inputText">Cover letter</label>
+                </div>
+                <div class="form-group">
+                  <div class="custom-file">
+                    <input type="file" name="upload-file" class="custom-file-input form-control" id="validatedCustomFile">
+                    <label class="custom-file-label" for="validatedCustomFile"><span class="file-return">No file choosen</span></label>
                   </div>
-                  <div class="form-group check-group">
-                    <div class="custom-checkbox">
-                      <input type="checkbox" class="custom-control-input" id="customControlValidation3">
-                      <label class="custom-control-label" for="customControlValidation3">Mobile UX</label>
-                    </div>
+                </div>  
+                <div class="form-group check-group">
+                  <div class="custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="terms" required>
+                    <label class="custom-control-label" for="terms">I accept the <a href="#">Term of Conditions</a> and <a href="#">Privacy Policy</a></label>
                   </div>
-                  <div class="form-group check-group">
-                    <div class="custom-checkbox">
-                      <input type="checkbox" class="custom-control-input" id="customControlValidation4">
-                      <label class="custom-control-label" for="customControlValidation4">Frontend development</label>
-                    </div>
-                  </div>
-                  <div class="form-group check-group">
-                    <div class="custom-checkbox">
-                      <input type="checkbox" class="custom-control-input" id="customControlValidation5">
-                      <label class="custom-control-label" for="customControlValidation5">Web application developer</label>
-                    </div>
-                  </div>
-                  <button class="btn step-btn">Next</button>
-                </form>
-              </div>
-              <div class="form-steps">
-                <a href="index.html" class="prev"><i class="las la-arrow-left"></i>Previous Step</a>
-                <h3 class="border-bottom">Availability & Salary Range</h3>
-                <form action="#" class="job-application-form" id="commentForm4">
-                  <h4 class="block-title">Work Availability</h4>
-                  <div class="form-group radio-group">
-                    <div class="custom-radio">
-                      <input type="radio" name="job-type" class="custom-control-input" id="radio10" required>
-                      <label class="custom-control-label" for="radio10">Full time</label>
-                    </div>
-                  </div>
-                  <div class="form-group radio-group">
-                    <div class="custom-radio">
-                      <input type="radio" name="job-type" class="custom-control-input" id="radio20" required>
-                      <label class="custom-control-label" for="radio20">Part Time</label>
-                    </div>
-                  </div>
-                  <div class="form-group radio-group">
-                    <div class="custom-radio">
-                      <input type="radio" name="job-type" class="custom-control-input" id="radio30" required>
-                      <label class="custom-control-label" for="radio30">Freelance / Contract</label>
-                    </div>
-                  </div>
-                  <h4 class="block-title">Expected Salary Range</h4>
-                  <div class="form-group radio-group">
-                    <div class="custom-radio">
-                      <input type="radio" name="salary" class="custom-control-input" id="radio40" required>
-                      <label class="custom-control-label" for="radio40">(500 - 750) USD</label>
-                    </div>
-                  </div>
-                  <div class="form-group radio-group">
-                    <div class="custom-radio">
-                      <input type="radio" name="salary" class="custom-control-input" id="radio50" required>
-                      <label class="custom-control-label" for="radio50">(750 - 1000) USD</label>
-                    </div>
-                  </div>
-                  <div class="form-group radio-group">
-                    <div class="custom-radio">
-                      <input type="radio" name="salary" class="custom-control-input" id="radio60" required>
-                      <label class="custom-control-label" for="radio60">(1000 - 1500) USD</label>
-                    </div>
-                  </div>
-                  <div class="form-group radio-group">
-                    <div class="custom-radio">
-                      <input type="radio" name="salary" class="custom-control-input" id="radio7" required>
-                      <label class="custom-control-label" for="radio7">Above 1500 USD</label>
-                    </div>
-                  </div>
-                  <button class="btn step-btn">Next</button>
-                </form>
-              </div>
-              <div class="form-steps">
-                <a href="job-4.html" class="prev"><i class="las la-arrow-left"></i>Previous Step</a>
-                <h3>Cover Letter & Resume</h3>
-                <form action="job-complete.html" class="job-application-form" id="commentForm5">
-                  <div class="form-group">
-                    <textarea class="form-control" name="cover-letter" id="inputText" required></textarea>
-                    <label for="inputText">Cover letter</label>
-                  </div>
-                  <div class="form-group">
-                    <div class="custom-file">
-                      <input type="file" name="upload-file" class="custom-file-input form-control" id="validatedCustomFile">
-                      <label class="custom-file-label" for="validatedCustomFile"><span class="file-return">No file choosen</span></label>
-                    </div>
-                  </div>  
-                  <div class="form-group check-group">
-                    <div class="custom-checkbox">
-                      <input type="checkbox" class="custom-control-input" id="terms" required>
-                      <label class="custom-control-label" for="terms">I accept the <a href="#">Term of Conditions</a> and <a href="#">Privacy Policy</a></label>
-                    </div>
-                  </div>
-                  <button class="btn">Next</button>
-                </form>
-              </div>
+                </div>
+                <button class="btn">Next</button>
+              </form>
             </div>
           </div>
         </div>
       </div>
-      <div class="footer">
-        <div class="social-links">
-          <a href="#"><i class="lab la-facebook-f"></i></a>
-          <a href="#"><i class="lab la-twitter"></i></a>
-          <a href="#"><i class="lab la-linkedin-in"></i></a>
-          <a href="#"><i class="lab la-instagram"></i></a>
-        </div>
-        <div class="copyright">
-          <p>Copyright © 2023 Anfra. All Rights Reserved</p>
-        </div>
+    </div>
+    <div class="footer">
+      <div class="social-links">
+        <a href="#"><i class="lab la-facebook-f"></i></a>
+        <a href="#"><i class="lab la-twitter"></i></a>
+        <a href="https://www.linkedin.com/company/kiaanagrowtech/"><i class="lab la-linkedin-in"></i></a>
+        <a href="#"><i class="lab la-instagram"></i></a>
+      </div>
+      <div class="copyright">
+        <p>Copyright © 2024 Kiaan. All Rights Reserved</p>
       </div>
     </div>
+  </div>
 
 
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/jquery.validate.min.js"></script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/jquery.validate.min.js"></script>
 
-    <script src="assets/js/custom.js"></script>
-  </body>
+  <script src="assets/js/custom.js"></script>
+</body>
 </html>
+
+
+                
